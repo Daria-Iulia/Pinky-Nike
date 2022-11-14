@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600&display=swap");
+:root {
+  --pink0: 237, 226, 232;
+  --pink1: 208, 161, 171;
+  --pink2: 229, 198, 198;
+  --pink3: 237, 153, 163;
+  --pink32: 168, 114, 127;
+  --pink4: 99, 71, 82;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-transform: uppercase;
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  background-color: rgb(var(--pink2));
+}
+
+.container {
+  background-color: rgb(var(--pink0));
+  display: flex;
+  flex-direction: row;
+  margin-left: 550px;
+  align-items: center;
+  height: 450px;
+  width: 800px;
+  border-radius: 15px;
+  margin-top: 200px;
+}
+
+img {
+  height: auto;
+  width: 415px;
+  margin-top: 40px;
+  margin-left: 29px;
+}
+
+img:hover {
+  filter: saturate(110%);
+}
+
+.container-sizes {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 10px;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.container-photo-sizes {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.container-photo-sizes h2 {
+  font-size: 18px;
+  margin-top: 40px;
+  margin-left: 54px;
+  color: rgb(var(--pink1));
+  margin-bottom: -10px;
+}
+
+.size {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(var(--pink2));
+  align-items: center;
+  justify-content: center;
+  color: rgb(var(--pink3));
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container-name-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-buttons {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+h3 {
+  font-size: 55px;
+  margin-top: -80px;
+  color: rgb(var(--pink3));
+}
+
+.container-name-description h2 {
+  font-size: 15px;
+  color: rgb(var(--pink1));
+}
+.container-name-description h4 {
+  font-size: 25px;
+  color: rgb(var(--pink4));
+}
+.container-name-description .p1 {
+  font-size: 25px;
+  color: rgb(var(--pink4));
+  margin-top: -10px;
+}
+.container-name-description p {
+  height: 100px;
+  width: 270px;
+  font-size: 13px;
+  color: rgb(var(--pink4));
+  text-transform: none;
+  margin-top: -15px;
+}
+
+.container-buttons .buy,
+.container-buttons #heart {
+  margin-top: 50px;
+}
+.container-buttons .buy {
+  background-color: rgb(var(--pink1));
+  padding: 10px 5px 10px 5px;
+  border: 1px solid rgb(var(--pink2));
+  color: rgb(var(--pink0));
+  height: 50px;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container-buttons #heart {
+  background-color: rgb(var(--pink1));
+  padding: 10px 5px 10px 5px;
+  border: 1px solid rgb(var(--pink2));
+  color: rgb(var(--pink0));
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.container-buttons .buy:hover,
+.container-buttons #heart:hover {
+  background-color: rgb(var(--pink32));
+}
+
+.container-buttons .buy:active,
+.container-buttons .buy:focus {
+  background-color: rgb(var(--pink3));
+  border: 1px solid rgb(var(--pink0));
+}
+
+.container-buttons #heart:active,
+.container-buttons #heart:focus {
+  background-color: rgb(var(--pink3));
+}
+
+.size:active,
+.size:focus,
+.size:hover {
+  background-color: rgb(var(--pink3));
+  border: 1px solid rgb(var(--pink0));
+  color: rgb(var(--pink0));
+}
